@@ -1,0 +1,924 @@
+2019-02-19 21:01:34 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit
+	...]
+2019-02-19 21:01:34 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2019-02-19 21:01:34 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-02-19 21:01:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-19 21:01:34 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-02-19 21:01:35 INFO  pooling:126 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2019-02-19 21:01:35 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=****, autocommit=false}
+2019-02-19 21:01:35 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-02-19 21:01:35 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-02-19 21:01:36 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-19 21:01:37 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3954d008] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-02-19 21:02:16 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-02-19 21:02:16 TRACE HibernatePersistenceProvider:49 - Starting createEntityManagerFactory for persistenceUnitName myunit
+2019-02-19 21:02:16 TRACE HibernatePersistenceProvider:86 - Attempting to obtain correct EntityManagerFactoryBuilder for persistenceUnitName : myunit
+2019-02-19 21:02:16 TRACE PersistenceXmlParser:241 - Attempting to parse persistence.xml file : file:/C:/Users/avsim/IdeaProjects/TestioProject/target/classes/META-INF/persistence.xml
+2019-02-19 21:02:16 TRACE ArchiveHelper:96 - JAR URL from URL Entry: file:/C:/Users/avsim/IdeaProjects/TestioProject/target/classes/META-INF/persistence.xml >> file:/C:/Users/avsim/IdeaProjects/TestioProject/target/classes/
+2019-02-19 21:02:16 TRACE PersistenceXmlParser:319 - Persistence unit name from persistence.xml : myunit
+2019-02-19 21:02:16 DEBUG HibernatePersistenceProvider:98 - Located and parsed 1 persistence units; checking each
+2019-02-19 21:02:16 DEBUG HibernatePersistenceProvider:106 - Checking persistence-unit [name=myunit, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [myunit]
+2019-02-19 21:02:16 DEBUG ProviderChecker:87 - Persistence-unit [myunit] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2019-02-19 21:02:16 TRACE ProviderChecker:53 - Checking requested PersistenceProvider name [org.hibernate.jpa.HibernatePersistenceProvider] against Hibernate provider names
+2019-02-19 21:02:16 DEBUG LogHelper:102 - PersistenceUnitInfo [
+	name: myunit
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/avsim/IdeaProjects/TestioProject/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names [
+		ua.artcode.testio.model.Student]
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: com.mysql.cj.jdbc.Driver
+		hibernate.connection.autocommit: false
+		javax.persistence.jdbc.password: 1595
+		javax.persistence.jdbc.url: jdbc:mysql://localhost:3306/testio
+		hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+		hibernate.show_sql: true
+		hibernate.hbm2ddl.auto: update
+		javax.persistence.jdbc.user: root]
+2019-02-19 21:02:16 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-02-19 21:02:16 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-02-19 21:02:16 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-02-19 21:02:16 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [disallow] -> [org.hibernate.event.internal.EntityCopyNotAllowedObserver]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [allow] -> [org.hibernate.event.internal.EntityCopyAllowedObserver]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [log] -> [org.hibernate.event.internal.EntityCopyAllowedLoggedObserver]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+2019-02-19 21:02:17 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+2019-02-19 21:02:17 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2019-02-19 21:02:17 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-02-19 21:02:17 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2019-02-19 21:02:17 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-02-19 21:02:17 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@481a15ff
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@481a15ff
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@481a15ff
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@77846d2c
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@24a35978
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -> org.hibernate.type.YesNoType@319b92f3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4fcd19b3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@4fcd19b3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@4fcd19b3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration character -> org.hibernate.type.CharacterType@17211155
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration char -> org.hibernate.type.CharacterType@17211155
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@17211155
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@5123a213
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@5123a213
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5123a213
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration integer -> org.hibernate.type.IntegerType@281e3708
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration int -> org.hibernate.type.IntegerType@281e3708
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@281e3708
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@543788f3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@543788f3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@543788f3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@15b3e5b
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@15b3e5b
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@15b3e5b
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@1068e947
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@1068e947
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1068e947
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@80169cf
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@80169cf
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3d0f8e03
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3d0f8e03
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration string -> org.hibernate.type.StringType@17baae6e
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -> org.hibernate.type.StringType@17baae6e
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@48a242ce
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@133e16fd
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration url -> org.hibernate.type.UrlType@5e955596
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@5e955596
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -> org.hibernate.type.DurationType@3439f68d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3439f68d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -> org.hibernate.type.InstantType@1442d7b5
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1442d7b5
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6cc7b4de
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6cc7b4de
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@49c43f4e
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@49c43f4e
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@11c20519
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@11c20519
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@365c30cc
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@365c30cc
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@71a794e5
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@71a794e5
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@37574691
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@37574691
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration date -> org.hibernate.type.DateType@6c3f5566
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6c3f5566
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration time -> org.hibernate.type.TimeType@16267862
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@16267862
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -> org.hibernate.type.TimestampType@49e202ad
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@49e202ad
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@49e202ad
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3d3fcdb0
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -> org.hibernate.type.CalendarType@49070868
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@49070868
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@49070868
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@28c4711c
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration locale -> org.hibernate.type.LocaleType@473b46c3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@473b46c3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration currency -> org.hibernate.type.CurrencyType@77be656f
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@77be656f
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@78a2da20
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@78a2da20
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration class -> org.hibernate.type.ClassType@7bc1a03d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7bc1a03d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@525b461a
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@525b461a
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@61d47554
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration binary -> org.hibernate.type.BinaryType@5a4aa2f2
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -> org.hibernate.type.BinaryType@5a4aa2f2
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration [B -> org.hibernate.type.BinaryType@5a4aa2f2
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@279ad2e3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@279ad2e3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@279ad2e3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -> org.hibernate.type.RowVersionType@77e4c80f
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration image -> org.hibernate.type.ImageType@255b53dc
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration characters -> org.hibernate.type.CharArrayType@4f9a3314
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -> org.hibernate.type.CharArrayType@4f9a3314
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration [C -> org.hibernate.type.CharArrayType@4f9a3314
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@51931956
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@51931956
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@51931956
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration text -> org.hibernate.type.TextType@62e136d3
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -> org.hibernate.type.NTextType@57175e74
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration blob -> org.hibernate.type.BlobType@6ee12bac
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6ee12bac
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@400cff1a
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration clob -> org.hibernate.type.ClobType@482cd91f
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@482cd91f
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -> org.hibernate.type.NClobType@2aece37d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2aece37d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@17c386de
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@1d548a08
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -> org.hibernate.type.SerializableType@2d9d4f9d
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration object -> org.hibernate.type.ObjectType@258e2e41
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@258e2e41
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3b938003
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6f3b5d16
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@78b1cc93
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6646153
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@21507a04
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@143640d5
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@6295d394
+2019-02-19 21:02:17 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@475e586c
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2019-02-19 21:02:17 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2019-02-19 21:02:17 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-02-19 21:02:17 INFO  pooling:126 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2019-02-19 21:02:17 INFO  pooling:132 - HHH10001001: Connection properties: {user=root, password=1595, autocommit=false}
+2019-02-19 21:02:17 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-02-19 21:02:17 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2019-02-19 21:02:17 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-02-19 21:02:18 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : MySQL
+    version : 8.0.13
+      major : 8
+      minor : 0
+2019-02-19 21:02:18 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)
+      major : 8
+      minor : 0
+2019-02-19 21:02:18 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2019-02-19 21:02:18 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-19 21:02:18 DEBUG IdentifierHelperBuilder:117 - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2019-02-19 21:02:18 DEBUG IdentifierHelperBuilder:191 - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2019-02-19 21:02:18 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [testio]
+2019-02-19 21:02:18 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [null]
+2019-02-19 21:02:18 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2019-02-19 21:02:18 DEBUG DefaultIdentifierGeneratorFactory:81 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2019-02-19 21:02:18 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2019-02-19 21:02:19 DEBUG AnnotationBinder:511 - Binding entity from annotated class: ua.artcode.testio.model.Student
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [DTYPE]
+2019-02-19 21:02:19 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2019-02-19 21:02:19 DEBUG EntityBinder:419 - Import with entity name Student
+2019-02-19 21:02:19 TRACE InFlightMetadataCollectorImpl:673 - Import: Student -> ua.artcode.testio.model.Student
+2019-02-19 21:02:19 TRACE InFlightMetadataCollectorImpl:673 - Import: ua.artcode.testio.model.Student -> ua.artcode.testio.model.Student
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [students]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [students]
+2019-02-19 21:02:19 DEBUG EntityBinder:695 - Bind entity ua.artcode.testio.model.Student on table students
+2019-02-19 21:02:19 TRACE AnnotationBinder:1643 - Processing annotations of ua.artcode.testio.model.Student.id
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2019-02-19 21:02:19 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(students), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2019-02-19 21:02:19 DEBUG PropertyBinder:174 - MetadataSourceProcessor property id with lazy=false
+2019-02-19 21:02:19 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [ua.artcode.testio.model.Student:id]
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:411 - building SimpleValue for id
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2019-02-19 21:02:19 DEBUG PropertyBinder:265 - Building property id
+2019-02-19 21:02:19 TRACE PropertyBinder:323 - Cascading id with null
+2019-02-19 21:02:19 TRACE AnnotationBinder:466 - Add generic generator with name: incrementor
+2019-02-19 21:02:19 TRACE AnnotationBinder:2395 - Bind @Id on id
+2019-02-19 21:02:19 TRACE AnnotationBinder:1643 - Processing annotations of ua.artcode.testio.model.Student.birth
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [birth]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [birth]
+2019-02-19 21:02:19 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(students), mappingColumn=birth, insertable=true, updatable=true, unique=false}
+2019-02-19 21:02:19 DEBUG PropertyBinder:174 - MetadataSourceProcessor property birth with lazy=false
+2019-02-19 21:02:19 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [ua.artcode.testio.model.Student:birth]
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:411 - building SimpleValue for birth
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [birth]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [birth]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [birth]
+2019-02-19 21:02:19 DEBUG PropertyBinder:265 - Building property birth
+2019-02-19 21:02:19 TRACE PropertyBinder:323 - Cascading birth with null
+2019-02-19 21:02:19 TRACE AnnotationBinder:1643 - Processing annotations of ua.artcode.testio.model.Student.name
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [student_name]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [student_name]
+2019-02-19 21:02:19 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(students), mappingColumn=student_name, insertable=true, updatable=true, unique=false}
+2019-02-19 21:02:19 DEBUG PropertyBinder:174 - MetadataSourceProcessor property name with lazy=false
+2019-02-19 21:02:19 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [ua.artcode.testio.model.Student:name]
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:411 - building SimpleValue for name
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [student_name]
+2019-02-19 21:02:19 DEBUG PropertyBinder:265 - Building property name
+2019-02-19 21:02:19 TRACE PropertyBinder:323 - Cascading name with null
+2019-02-19 21:02:19 TRACE AnnotationBinder:1643 - Processing annotations of ua.artcode.testio.model.Student.studentType
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [studentType]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [studentType]
+2019-02-19 21:02:19 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(students), mappingColumn=studentType, insertable=true, updatable=true, unique=false}
+2019-02-19 21:02:19 DEBUG PropertyBinder:174 - MetadataSourceProcessor property studentType with lazy=false
+2019-02-19 21:02:19 DEBUG AbstractPropertyHolder:92 - Attempting to locate auto-apply AttributeConverter for property [ua.artcode.testio.model.Student:studentType]
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:411 - building SimpleValue for studentType
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [studentType]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [studentType]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [studentType]
+2019-02-19 21:02:19 DEBUG PropertyBinder:265 - Building property studentType
+2019-02-19 21:02:19 TRACE PropertyBinder:323 - Cascading studentType with null
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for id
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for birth
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for name
+2019-02-19 21:02:19 DEBUG SimpleValueBinder:456 - Starting fillSimpleValue for studentType
+2019-02-19 21:02:19 DEBUG PrimaryKey:35 - Forcing column [id] to be non-null as it is part of the primary key for table [students]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [id]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:61 - Normalizing identifier quoting [students]
+2019-02-19 21:02:19 TRACE BatchFetchStyle:51 - Interpreting BatchFetchStyle from setting : null
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder]
+2019-02-19 21:02:19 DEBUG SessionFactoryImpl:199 - Building session factory
+2019-02-19 21:02:19 DEBUG Settings:69 - SessionFactory name : null
+2019-02-19 21:02:19 DEBUG Settings:70 - Automatic flush during beforeCompletion(): enabled
+2019-02-19 21:02:19 DEBUG Settings:71 - Automatic session close at end of transaction: disabled
+2019-02-19 21:02:19 DEBUG Settings:73 - Statistics: disabled
+2019-02-19 21:02:19 DEBUG Settings:75 - Deleted entity synthetic identifier rollback: disabled
+2019-02-19 21:02:19 DEBUG Settings:76 - Default entity-mode: pojo
+2019-02-19 21:02:19 DEBUG Settings:77 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2019-02-19 21:02:19 DEBUG Settings:78 - Allow initialization of lazy state outside session : disabled
+2019-02-19 21:02:19 DEBUG Settings:80 - Using BatchFetchStyle : LEGACY
+2019-02-19 21:02:19 DEBUG Settings:81 - Default batch fetch size: -1
+2019-02-19 21:02:19 DEBUG Settings:82 - Maximum outer join fetch depth: 2
+2019-02-19 21:02:19 DEBUG Settings:83 - Default null ordering: NONE
+2019-02-19 21:02:19 DEBUG Settings:84 - Order SQL updates by primary key: disabled
+2019-02-19 21:02:19 DEBUG Settings:85 - Order SQL inserts for batching: disabled
+2019-02-19 21:02:19 DEBUG Settings:87 - multi-tenancy strategy : NONE
+2019-02-19 21:02:19 DEBUG Settings:89 - JTA Track by Thread: enabled
+2019-02-19 21:02:19 DEBUG Settings:91 - Query language substitutions: {}
+2019-02-19 21:02:19 DEBUG Settings:92 - JPA query language strict compliance: disabled
+2019-02-19 21:02:19 DEBUG Settings:93 - Named query checking : enabled
+2019-02-19 21:02:19 DEBUG Settings:95 - Second-level cache: enabled
+2019-02-19 21:02:19 DEBUG Settings:96 - Second-level query cache: disabled
+2019-02-19 21:02:19 DEBUG Settings:97 - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@635572a7
+2019-02-19 21:02:19 DEBUG Settings:98 - Second-level cache region prefix: null
+2019-02-19 21:02:19 DEBUG Settings:99 - Optimize second-level cache for minimal puts: disabled
+2019-02-19 21:02:19 DEBUG Settings:100 - Structured second-level cache entries: disabled
+2019-02-19 21:02:19 DEBUG Settings:101 - Second-level cache direct-reference entries: disabled
+2019-02-19 21:02:19 DEBUG Settings:102 - Automatic eviction of collection cache: disabled
+2019-02-19 21:02:19 DEBUG Settings:104 - JDBC batch size: 15
+2019-02-19 21:02:19 DEBUG Settings:105 - JDBC batch updates for versioned data: enabled
+2019-02-19 21:02:19 DEBUG Settings:106 - Scrollable result sets: enabled
+2019-02-19 21:02:19 DEBUG Settings:107 - Wrap result sets: disabled
+2019-02-19 21:02:19 DEBUG Settings:108 - JDBC3 getGeneratedKeys(): enabled
+2019-02-19 21:02:19 DEBUG Settings:109 - JDBC result set fetch size: null
+2019-02-19 21:02:19 DEBUG Settings:110 - Connection release mode: AFTER_TRANSACTION
+2019-02-19 21:02:19 DEBUG Settings:111 - Generate SQL with comments: disabled
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.spi.CacheImplementor]
+2019-02-19 21:02:19 TRACE TypeFactory:58 - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@52d645b1
+2019-02-19 21:02:19 DEBUG SessionFactoryImpl:254 - Session factory constructed with filter configurations : {}
+2019-02-19 21:02:19 DEBUG SessionFactoryImpl:255 - Instantiating session factory with properties: {sun.desktop=windows, awt.toolkit=sun.awt.windows.WToolkit, file.encoding.pkg=sun.io, java.specification.version=1.8, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, hibernate.dialect=org.hibernate.dialect.MySQL5Dialect, java.class.path=C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Users\avsim\IdeaProjects\TestioProject\target\classes;C:\Users\avsim\.m2\repository\mysql\mysql-connector-java\8.0.13\mysql-connector-java-8.0.13.jar;C:\Users\avsim\.m2\repository\com\google\protobuf\protobuf-java\3.6.1\protobuf-java-3.6.1.jar;C:\Users\avsim\.m2\repository\org\hibernate\hibernate-core\5.2.10.Final\hibernate-core-5.2.10.Final.jar;C:\Users\avsim\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\avsim\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\avsim\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\avsim\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\avsim\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.1.Final\jboss-transaction-api_1.2_spec-1.0.1.Final.jar;C:\Users\avsim\.m2\repository\org\jboss\jandex\2.0.3.Final\jandex-2.0.3.Final.jar;C:\Users\avsim\.m2\repository\com\fasterxml\classmate\1.3.0\classmate-1.3.0.jar;C:\Users\avsim\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\avsim\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.1.Final\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\avsim\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.3.2\lib\idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=http://java.oracle.com/, user.timezone=Europe/Helsinki, javax.persistence.jdbc.user=****, javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/testio, hibernate.connection.autocommit=false, os.name=Windows 10, java.vm.specification.version=1.8, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_161\jre\bin, sun.java.command=ua.artcode.testio.test.EntityManagerFactoryTest, sun.cpu.endian=little, user.home=C:\Users\avsim, user.language=en, java.specification.vendor=Oracle Corporation, java.home=C:\Program Files\Java\jdk1.8.0_161\jre, file.separator=\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, javax.persistence.jdbc.driver=com.mysql.cj.jdbc.Driver, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=1.8.0_161-b12, user.name=avsim, path.separator=;, hibernate.connection.username=root, os.version=10.0, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/testio, hibernate.ejb.persistenceUnitName=myunit, file.encoding=UTF-8, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=C:\Users\avsim\AppData\Local\Temp\, java.version=1.8.0_161, user.dir=C:\Users\avsim\IdeaProjects\TestioProject, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@710b18a6, java.library.path=C:\Program Files\Java\jdk1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\MATLAB\R2015b\runtime\win64;C:\Program Files\MATLAB\R2015b\bin;C:\Program Files\MATLAB\R2015b\polyspace\bin;C:\Users\avsim\AppData\Local\Microsoft\WindowsApps;C:\Users\avsim\AppData\Local\atom\bin;., java.vm.info=mixed mode, java.vendor=Oracle Corporation, java.vm.version=25.161-b12, hibernate.bytecode.use_reflection_optimizer=false, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.io.unicode.encoding=UnicodeLittle, javax.persistence.jdbc.password=1595, java.class.version=52.0}
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+2019-02-19 21:02:19 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+2019-02-19 21:02:19 TRACE CascadeStyles:265 - Registering external cascade style [persist : STYLE_PERSIST_SKIPLAZY]
+2019-02-19 21:02:19 DEBUG CascadeStyles:268 - External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+2019-02-19 21:02:19 DEBUG SessionFactoryImpl:294 - Instantiated session factory
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.property.access.spi.PropertyAccessStrategyResolver]
+2019-02-19 21:02:19 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [ua.artcode.testio.model.Student] is safe
+2019-02-19 21:02:19 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [ua.artcode.testio.model.Student] is safe
+2019-02-19 21:02:19 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 TRACE AbstractPropertyMapping:122 - Skipping duplicate registration of path [birth], existing type = [org.hibernate.type.DateType@6c3f5566], incoming type = [org.hibernate.type.DateType@6c3f5566]
+2019-02-19 21:02:19 TRACE AbstractPropertyMapping:122 - Skipping duplicate registration of path [name], existing type = [org.hibernate.type.StringType@17baae6e], incoming type = [org.hibernate.type.StringType@17baae6e]
+2019-02-19 21:02:19 TRACE AbstractPropertyMapping:122 - Skipping duplicate registration of path [studentType], existing type = [org.hibernate.type.CustomType@6bb75258], incoming type = [org.hibernate.type.CustomType@6bb75258]
+2019-02-19 21:02:19 TRACE AbstractPropertyMapping:122 - Skipping duplicate registration of path [id], existing type = [org.hibernate.type.IntegerType@281e3708], incoming type = [org.hibernate.type.IntegerType@281e3708]
+2019-02-19 21:02:19 DEBUG AbstractEntityPersister:3598 - Static SQL for entity: ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG AbstractEntityPersister:3603 -  Version select: select id from students where id =?
+2019-02-19 21:02:19 DEBUG AbstractEntityPersister:3606 -  Snapshot select: select student_.id, student_.birth as birth2_0_, student_.student_name as student_3_0_, student_.studentType as studentT4_0_ from students student_ where student_.id=?
+2019-02-19 21:02:19 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into students (birth, student_name, studentType, id) values (?, ?, ?, ?)
+2019-02-19 21:02:19 DEBUG AbstractEntityPersister:394 -  Update 0: update students set birth=?, student_name=?, studentType=? where id=?
+2019-02-19 21:02:19 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from students where id=?
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e3f95fe]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@65aa6596
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@65aa6596
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@65aa6596
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [NONE]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@61526469]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@274872f8
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@274872f8
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@274872f8
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [READ]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@76ba13c]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@eb6449b
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@eb6449b
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@eb6449b
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [UPGRADE]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? for update
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7c351808]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@180e6ac4
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@180e6ac4
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@180e6ac4
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [UPGRADE_NOWAIT]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? for update
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@42b64ab8]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7e985ce9
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7e985ce9
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7e985ce9
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [UPGRADE_SKIPLOCKED]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? for update
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2a39fe6a]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@410ae9a3
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@410ae9a3
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@410ae9a3
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [FORCE]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? for update
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@319988b0]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@d5ae57e
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@d5ae57e
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@d5ae57e
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [PESSIMISTIC_READ]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? lock in share mode
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68759011]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7e242b4d
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7e242b4d
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7e242b4d
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [PESSIMISTIC_WRITE]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? for update
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@305f031]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@592e843a
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@592e843a
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@592e843a
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [PESSIMISTIC_FORCE_INCREMENT]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=? for update
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d1f7216]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@423e4cbb
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@423e4cbb
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@423e4cbb
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [OPTIMISTIC]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:172 -  Starting root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6e16b8b5]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:113 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@43b4fe19
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:648 - .. Registering AssociationKey : AssociationKey(table=students, columns={id}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@43b4fe19
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:239 - >> Starting entity identifier : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birth
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=birth, type=date [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : name
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=name, type=string [non-identifier])
+2019-02-19 21:02:19 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : studentType
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:547 - >> Starting attribute Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:628 - << Finishing up attribute : Attribute(name=studentType, type=org.hibernate.type.EnumType [non-identifier])
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:120 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@43b4fe19
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:208 -  Finished root entity : ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:150 - Building LoadPlan...
+2019-02-19 21:02:19 DEBUG LoadQueryJoinAndFetchProcessor:101 - processing queryspace <gen:0>
+2019-02-19 21:02:19 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=ua.artcode.testio.model.Student)
+    - Returns
+       - EntityReturnImpl(entity=ua.artcode.testio.model.Student, querySpaceUid=<gen:0>, path=ua.artcode.testio.model.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ua.artcode.testio.model.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2019-02-19 21:02:19 DEBUG EntityLoader:115 - Static select for entity ua.artcode.testio.model.Student [OPTIMISTIC_FORCE_INCREMENT]: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity ua.artcode.testio.model.Student: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity ua.artcode.testio.model.Student: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 TRACE MetadataContext:182 - Wrapping up metadata context...
+2019-02-19 21:02:19 TRACE MetadataContext:194 - Starting entity [ua.artcode.testio.model.Student]
+2019-02-19 21:02:19 TRACE AttributeFactory:125 - Building identifier attribute [ua.artcode.testio.model.Student.id]
+2019-02-19 21:02:19 TRACE AttributeFactory:454 - Starting attribute metadata determination [id]
+2019-02-19 21:02:19 TRACE AttributeFactory:459 -     Determined member [private int ua.artcode.testio.model.Student.id]
+2019-02-19 21:02:19 TRACE AttributeFactory:463 -     Determined type [name=integer, class=org.hibernate.type.IntegerType]
+2019-02-19 21:02:19 TRACE AttributeFactory:74 - Building attribute [ua.artcode.testio.model.Student.birth]
+2019-02-19 21:02:19 TRACE AttributeFactory:454 - Starting attribute metadata determination [birth]
+2019-02-19 21:02:19 TRACE AttributeFactory:459 -     Determined member [private java.util.Date ua.artcode.testio.model.Student.birth]
+2019-02-19 21:02:19 TRACE AttributeFactory:463 -     Determined type [name=date, class=org.hibernate.type.DateType]
+2019-02-19 21:02:19 TRACE AttributeFactory:74 - Building attribute [ua.artcode.testio.model.Student.name]
+2019-02-19 21:02:19 TRACE AttributeFactory:454 - Starting attribute metadata determination [name]
+2019-02-19 21:02:19 TRACE AttributeFactory:459 -     Determined member [private java.lang.String ua.artcode.testio.model.Student.name]
+2019-02-19 21:02:19 TRACE AttributeFactory:463 -     Determined type [name=string, class=org.hibernate.type.StringType]
+2019-02-19 21:02:19 TRACE AttributeFactory:74 - Building attribute [ua.artcode.testio.model.Student.studentType]
+2019-02-19 21:02:19 TRACE AttributeFactory:454 - Starting attribute metadata determination [studentType]
+2019-02-19 21:02:19 TRACE AttributeFactory:459 -     Determined member [private ua.artcode.testio.service.StudentType ua.artcode.testio.model.Student.studentType]
+2019-02-19 21:02:19 TRACE AttributeFactory:463 -     Determined type [name=org.hibernate.type.EnumType, class=org.hibernate.type.CustomType]
+2019-02-19 21:02:19 TRACE MetadataContext:225 - Completed entity [ua.artcode.testio.model.Student]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.tool.schema.spi.SchemaManagementTool]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [testio]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [testio] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7cbee484] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [students]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [students] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [id]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [id] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [birth]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [birth] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [student_name]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [student_name] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [studentType]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [studentType] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 DEBUG Table:514 - No alter strings for table : students
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [students]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [students] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 TRACE UniqueConstraintSchemaUpdateStrategy:50 - Interpreting UniqueConstraintSchemaUpdateStrategy from setting : null
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:191 - Normalizing identifier quoting for object name [students]
+2019-02-19 21:02:19 TRACE NormalizingIdentifierHelperImpl:157 - Rendering unquoted identifier [students] in lower case for use in DatabaseMetaData
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+2019-02-19 21:02:19 DEBUG JtaPlatformInitiator:42 - No JtaPlatform was specified, checking resolver
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformResolver]
+2019-02-19 21:02:19 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2019-02-19 21:02:19 DEBUG StandardJtaPlatformResolver:102 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-02-19 21:02:19 DEBUG NamedQueryRepository:151 - Checking 0 named HQL queries
+2019-02-19 21:02:19 DEBUG NamedQueryRepository:167 - Checking 0 named SQL queries
+2019-02-19 21:02:19 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@70fab835
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+2019-02-19 21:02:19 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: e50273d3-477d-4da8-861c-f9e3ebdfcadb (<unnamed>)
+2019-02-19 21:02:19 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+2019-02-19 21:02:19 TRACE SessionFactoryImpl$SessionBuilderImpl:1208 - Opening Hibernate Session.  tenant=null, owner=null
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+2019-02-19 21:02:19 DEBUG StatisticsInitiator:82 - Statistics initialized [enabled=false]
+2019-02-19 21:02:19 TRACE SessionImpl:284 - Opened Session [34e49e40-6182-48d6-b563-88c699b3f9e2] at timestamp: 15506029396
+2019-02-19 21:02:19 DEBUG TransactionImpl:55 - begin
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:66 - Preparing to begin transaction via JDBC Connection.setAutoCommit(false)
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:68 - Transaction begun via JDBC Connection.setAutoCommit(false)
+2019-02-19 21:02:19 TRACE JdbcResourceLocalTransactionCoordinatorImpl:140 - ResourceLocalTransactionCoordinatorImpl#afterBeginCallback
+2019-02-19 21:02:19 TRACE IdentifierValue:130 - ID unsaved-value: 0
+2019-02-19 21:02:19 TRACE AbstractSaveEventListener:501 - Transient instance of: ua.artcode.testio.model.Student
+2019-02-19 21:02:19 TRACE DefaultPersistEventListener:183 - Saving transient instance
+2019-02-19 21:02:19 DEBUG IncrementGenerator:108 - Fetching initial value: select max(id) from students
+2019-02-19 21:02:19 DEBUG SQL:92 - select max(id) from students
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:55 - Registering statement [com.mysql.cj.jdbc.ClientPreparedStatement: select max(id) from students]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:182 - Registering result set [com.mysql.cj.jdbc.result.ResultSetImpl@384fc774]
+2019-02-19 21:02:19 DEBUG IncrementGenerator:123 - First free id: 6
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:91 - Releasing result set [com.mysql.cj.jdbc.result.ResultSetImpl@384fc774]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:132 - Closing result set [com.mysql.cj.jdbc.result.ResultSetImpl@384fc774]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:68 - Releasing statement [com.mysql.cj.jdbc.ClientPreparedStatement: select max(id) from students]
+2019-02-19 21:02:19 DEBUG ResourceRegistryStandardImpl:73 - HHH000387: ResultSet's statement was not registered
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:148 - Closing prepared statement [com.mysql.cj.jdbc.ClientPreparedStatement: select max(id) from students]
+2019-02-19 21:02:19 TRACE JdbcCoordinatorImpl:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-02-19 21:02:19 DEBUG AbstractSaveEventListener:118 - Generated identifier: 6, using strategy: org.hibernate.id.IncrementGenerator
+2019-02-19 21:02:19 TRACE AbstractSaveEventListener:157 - Saving [ua.artcode.testio.model.Student#6]
+2019-02-19 21:02:19 TRACE ActionQueue:247 - Adding an EntityInsertAction for [ua.artcode.testio.model.Student] object
+2019-02-19 21:02:19 TRACE ActionQueue:260 - Adding insert with no non-nullable, transient entities: [EntityInsertAction[ua.artcode.testio.model.Student#6]]
+2019-02-19 21:02:19 TRACE ActionQueue:283 - Adding resolved non-early insert action.
+2019-02-19 21:02:19 DEBUG TransactionImpl:66 - committing
+2019-02-19 21:02:19 TRACE JdbcResourceLocalTransactionCoordinatorImpl:144 - ResourceLocalTransactionCoordinatorImpl#beforeCompletionCallback
+2019-02-19 21:02:19 TRACE SessionImpl:2410 - SessionImpl#beforeTransactionCompletion()
+2019-02-19 21:02:19 TRACE SessionImpl:490 - Automatically flushing session
+2019-02-19 21:02:19 TRACE AbstractFlushingEventListener:67 - Flushing session
+2019-02-19 21:02:19 DEBUG AbstractFlushingEventListener:132 - Processing flush-time cascades
+2019-02-19 21:02:19 TRACE Cascade:82 - Processing cascade ACTION_PERSIST_ON_FLUSH for: ua.artcode.testio.model.Student
+2019-02-19 21:02:19 TRACE Cascade:168 - Done processing cascade ACTION_PERSIST_ON_FLUSH for: ua.artcode.testio.model.Student
+2019-02-19 21:02:19 DEBUG AbstractFlushingEventListener:174 - Dirty checking collections
+2019-02-19 21:02:19 TRACE AbstractFlushingEventListener:189 - Flushing entities and processing referenced collections
+2019-02-19 21:02:19 TRACE AbstractFlushingEventListener:232 - Processing unreferenced collections
+2019-02-19 21:02:19 TRACE AbstractFlushingEventListener:249 - Scheduling collection removes/(re)creates/updates
+2019-02-19 21:02:19 DEBUG AbstractFlushingEventListener:106 - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2019-02-19 21:02:19 DEBUG AbstractFlushingEventListener:113 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2019-02-19 21:02:19 DEBUG EntityPrinter:102 - Listing entities:
+2019-02-19 21:02:19 DEBUG EntityPrinter:109 - ua.artcode.testio.model.Student{studentType=JUNIOR, name=Serhii, birth=Tue Feb 19 21:02:19 EET 2019, id=6}
+2019-02-19 21:02:19 TRACE AbstractFlushingEventListener:325 - Executing flush
+2019-02-19 21:02:19 TRACE AbstractEntityPersister:2958 - Inserting entity: [ua.artcode.testio.model.Student#6]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.batch.spi.BatchBuilder]
+2019-02-19 21:02:19 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.jmx.spi.JmxService]
+2019-02-19 21:02:19 DEBUG SQL:92 - insert into students (birth, student_name, studentType, id) values (?, ?, ?, ?)
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:55 - Registering statement [com.mysql.cj.jdbc.ClientPreparedStatement: insert into students (birth, student_name, studentType, id) values (** NOT SPECIFIED **, ** NOT SPECIFIED **, ** NOT SPECIFIED **, ** NOT SPECIFIED **)]
+2019-02-19 21:02:19 TRACE AbstractEntityPersister:2709 - Dehydrating entity: [ua.artcode.testio.model.Student#6]
+2019-02-19 21:02:19 TRACE BasicBinder:65 - binding parameter [1] as [DATE] - [Tue Feb 19 21:02:19 EET 2019]
+2019-02-19 21:02:19 TRACE BasicBinder:65 - binding parameter [2] as [VARCHAR] - [Serhii]
+2019-02-19 21:02:19 TRACE EnumType:321 - Binding [JUNIOR] to parameter: [3]
+2019-02-19 21:02:19 TRACE BasicBinder:65 - binding parameter [4] as [INTEGER] - [6]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:68 - Releasing statement [com.mysql.cj.jdbc.ClientPreparedStatement: insert into students (birth, student_name, studentType, id) values ('2019-02-19', 'Serhii', 'JUNIOR', 6)]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:148 - Closing prepared statement [com.mysql.cj.jdbc.ClientPreparedStatement: insert into students (birth, student_name, studentType, id) values ('2019-02-19', 'Serhii', 'JUNIOR', 6)]
+2019-02-19 21:02:19 TRACE JdbcCoordinatorImpl:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-02-19 21:02:19 TRACE JdbcCoordinatorImpl:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-02-19 21:02:19 TRACE AbstractFlushingEventListener:357 - Post flush
+2019-02-19 21:02:19 TRACE SynchronizationRegistryStandardImpl:55 - SynchronizationRegistryStandardImpl.notifySynchronizationsBeforeTransactionCompletion
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:80 - Preparing to commit transaction via JDBC Connection.commit()
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:83 - Transaction committed via JDBC Connection.commit()
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:53 - LogicalConnection#afterTransaction
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:286 - Releasing JDBC resources
+2019-02-19 21:02:19 DEBUG LogicalConnectionManagedImpl:170 - Initiating JDBC connection release from afterTransaction
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:286 - Releasing JDBC resources
+2019-02-19 21:02:19 TRACE JdbcResourceLocalTransactionCoordinatorImpl:162 - ResourceLocalTransactionCoordinatorImpl#afterCompletionCallback(true)
+2019-02-19 21:02:19 TRACE SynchronizationRegistryStandardImpl:159 - SynchronizationRegistryStandardImpl.notifySynchronizationsAfterTransactionCompletion(3)
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:53 - LogicalConnection#afterTransaction
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:286 - Releasing JDBC resources
+2019-02-19 21:02:19 DEBUG LogicalConnectionManagedImpl:170 - Initiating JDBC connection release from afterTransaction
+2019-02-19 21:02:19 TRACE SessionImpl:2423 - SessionImpl#afterTransactionCompletion(successful=true, delayed=false)
+2019-02-19 21:02:19 TRACE SessionImpl:404 - Closing session [34e49e40-6182-48d6-b563-88c699b3f9e2]
+2019-02-19 21:02:19 TRACE JdbcCoordinatorImpl:173 - Closing JDBC container [org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl@251f7d26]
+2019-02-19 21:02:19 DEBUG JdbcCoordinatorImpl:177 - HHH000420: Closing un-released batch
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:286 - Releasing JDBC resources
+2019-02-19 21:02:19 TRACE LogicalConnectionManagedImpl:246 - Closing logical connection
+2019-02-19 21:02:19 TRACE LogicalConnectionManagedImpl:253 - Logical connection closed
+2019-02-19 21:02:19 TRACE SessionFactoryImpl$SessionBuilderImpl:1208 - Opening Hibernate Session.  tenant=null, owner=null
+2019-02-19 21:02:19 TRACE SessionImpl:284 - Opened Session [3ce2b113-6a9a-4fae-8f97-7c79c02345ab] at timestamp: 15506029397
+2019-02-19 21:02:19 TRACE DefaultLoadEventListener:254 - Loading entity: [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 TRACE DefaultLoadEventListener:435 - Attempting to resolve: [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 TRACE DefaultLoadEventListener:473 - Object not resolved in any cache: [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 TRACE AbstractEntityPersister:4069 - Fetching entity: [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 DEBUG SQL:92 - select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=?
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:55 - Registering statement [com.mysql.cj.jdbc.ClientPreparedStatement: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=** NOT SPECIFIED **]
+2019-02-19 21:02:19 TRACE JdbcCoordinatorImpl:333 - Registering last query statement [com.mysql.cj.jdbc.ClientPreparedStatement: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=** NOT SPECIFIED **]
+2019-02-19 21:02:19 TRACE BasicBinder:65 - binding parameter [1] as [INTEGER] - [1]
+2019-02-19 21:02:19 TRACE AbstractLoadPlanBasedLoader:287 - Bound [2] parameters total
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:182 - Registering result set [com.mysql.cj.jdbc.result.ResultSetImpl@69c43e48]
+2019-02-19 21:02:19 TRACE ResultSetProcessorImpl:117 - Processing result set
+2019-02-19 21:02:19 DEBUG ResultSetProcessorImpl:120 - Starting ResultSet row #0
+2019-02-19 21:02:19 DEBUG EntityReferenceInitializerImpl:126 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2019-02-19 21:02:19 TRACE EntityReferenceInitializerImpl:227 - hydrating entity state
+2019-02-19 21:02:19 TRACE EntityReferenceInitializerImpl:279 - Initializing object from ResultSet: [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 TRACE AbstractEntityPersister:2774 - Hydrating entity: [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 TRACE BasicExtractor:61 - extracted value ([birth2_0_0_] : [DATE]) - [2019-02-12]
+2019-02-19 21:02:19 TRACE BasicExtractor:61 - extracted value ([student_3_0_0_] : [VARCHAR]) - [Serhii]
+2019-02-19 21:02:19 TRACE EnumType:419 - Returning [JUNIOR] as column [studentT4_0_0_]
+2019-02-19 21:02:19 TRACE ResultSetProcessorImpl:131 - Done processing result set (1 rows)
+2019-02-19 21:02:19 TRACE AbstractRowReader:231 - Total objects hydrated: 1
+2019-02-19 21:02:19 DEBUG TwoPhaseLoad:141 - Resolving associations for [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 DEBUG TwoPhaseLoad:281 - Done materializing entity [ua.artcode.testio.model.Student#1]
+2019-02-19 21:02:19 TRACE ResultSetProcessingContextImpl:330 - Skipping create subselects because there are fewer than 2 results, so query by key is more efficient.
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:91 - Releasing result set [com.mysql.cj.jdbc.result.ResultSetImpl@69c43e48]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:132 - Closing result set [com.mysql.cj.jdbc.result.ResultSetImpl@69c43e48]
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:68 - Releasing statement [com.mysql.cj.jdbc.ClientPreparedStatement: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=1]
+2019-02-19 21:02:19 DEBUG ResourceRegistryStandardImpl:73 - HHH000387: ResultSet's statement was not registered
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:148 - Closing prepared statement [com.mysql.cj.jdbc.ClientPreparedStatement: select student0_.id as id1_0_0_, student0_.birth as birth2_0_0_, student0_.student_name as student_3_0_0_, student0_.studentType as studentT4_0_0_ from students student0_ where student0_.id=1]
+2019-02-19 21:02:19 TRACE JdbcCoordinatorImpl:263 - Starting afterQuery statement execution processing [AFTER_TRANSACTION]
+2019-02-19 21:02:19 TRACE StatefulPersistenceContext:916 - Initializing non-lazy collections
+2019-02-19 21:02:19 DEBUG AbstractLoadPlanBasedEntityLoader:189 - Done entity load : ua.artcode.testio.model.Student#1
+2019-02-19 21:02:19 TRACE AbstractLogicalConnectionImplementor:53 - LogicalConnection#afterTransaction
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:286 - Releasing JDBC resources
+2019-02-19 21:02:19 DEBUG LogicalConnectionManagedImpl:170 - Initiating JDBC connection release from afterTransaction
+2019-02-19 21:02:19 TRACE ResourceRegistryStandardImpl:286 - Releasing JDBC resources
+2019-02-19 21:02:48 DEBUG DriverManagerConnectionProviderImpl:51 - Connection pool now considered primed; min-size will be maintained
+2019-02-19 21:04:32 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: myunit
+	...]
+2019-02-19 21:04:32 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2019-02-19 21:04:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-02-19 21:04:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-02-19 21:04:33 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-02-19 21:04:33 INFO  pooling:126 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/testio]
+2019-02-19 21:04:33 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=****, autocommit=false}
+2019-02-19 21:04:33 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-02-19 21:04:33 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-02-19 21:04:34 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-02-19 21:04:35 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3954d008] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
