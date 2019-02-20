@@ -7,16 +7,16 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class TestRelations {
+public class TestRelationsV2 {
     public static void main(String[] args) {
         EntityManagerFactory entityManagerFactory =
                 Persistence.createEntityManagerFactory("myunit");
         EntityManager manager = entityManagerFactory.createEntityManager();
 
-        Course course1 = new Course("1", "desc");
-        Course course2 = new Course("2", "desc");
-        Course course3 = new Course("3", "desc");
-        Course course4 = new Course("4", "desc");
+        Course course1 = new Course("11", "desc");
+        Course course2 = new Course("21", "desc");
+        Course course3 = new Course("31", "desc");
+        Course course4 = new Course("41", "desc");
 
         Teacher teacher1 = new Teacher("Ivan",5);
         Teacher teacher2 = new Teacher("Serhii",5);
@@ -34,18 +34,9 @@ public class TestRelations {
         teacher3.getCourse().add(course4);
 
         manager.getTransaction().begin();
-
-        manager.persist(course1);
-        manager.persist(course2);
-        manager.persist(course3);
-        manager.persist(course4);
-
-
         manager.persist(teacher1);
         manager.persist(teacher2);
         manager.persist(teacher3);
         manager.getTransaction().commit();
-
-
     }
 }
